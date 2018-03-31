@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./jquery-3.2.1.js"></script>
+    <script src="./drdc.js"></script>
+    <script>
+        $(function() {
+            $('.slider').slider();
+        });
+    </script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        li {
+            width: 500px;
+            height: 300px;
+            margin: 100px auto;
+            position: absolute;
+            left: 30%;
+        }
+        
+        span {
+            font-size: 40px;
+            font-weight: 700;
+            color: white;
+            cursor: pointer;
+        }
+        
+        .prev {
+            position: absolute;
+            top: 220px;
+            left: 30%;
+        }
+        
+        .next {
+            position: absolute;
+            top: 220px;
+            left: 54%;
+        }
+    </style>
+    <script>
+        $(function() {
+            $('#slider').slider();
+        });
+    </script>
+</head>
+
+<body>
+
+    <ul id="slider">
+        <li><img src="./img/1.jpg" alt=""></li>
+        <li><img src="./img/2.jpg" alt=""></li>
+        <li><img src="./img/3.jpg" alt=""></li>
+        <li><img src="./img/4.jpg" alt=""></li>
+    </ul>
+    <span class="prev">&lt;</span>
+    <span class="next">&gt;</span>
+</body>
+
+</html>
